@@ -153,7 +153,7 @@ function editUser() {
     });
     localStorage.users = JSON.stringify(users);
     localStorage.isEditing = null;
-    location.pathname = "/writing-speed/1.login/";
+    location.pathname = "/writing-speed/1.%20login/";
 }
 
 // Hiding Popup Box
