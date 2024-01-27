@@ -15,7 +15,7 @@ let activeUser;
 // Redirect
 if (location.pathname == "/index.html" || location.pathname == "/" ) {
     if (activeUsername == "") {
-        location.pathname = "/1.%20login/index.html";
+        location.pathname = "/writing-speed/1.%20login/index.html";
     } else {
         location.pathname = "/2.%20home/index.html";
     }
