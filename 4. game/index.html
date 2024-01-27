@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <title>Writing Speed - Signup</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="mode-button-container">
+        <button class="toggle-mode-btn small-icon"><i class="fa-solid fa-moon"></i></button>
+    </div>
+
+    <div class="options flex-item">
+        <div class="current-user flex-item">
+            <span class="small-icon logout"><i class="fa-solid fa-user"></i></span>
+            <small class="current-username"></small>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="headline"></h1>
+    </header>
+
+    <div class="container flex-item flex-col flex-space">
+        <header class="flex-item flex-space">
+            <div class="counter">00:00:000</div>
+            <div class="pause-button-container">
+                <button class="small-icon pause"><i class="fa-solid fa-pause"></i></button>
+            </div>
+        </header>
+        <section>
+            <div class="display flex-item flex-center"></div>
+        </section>
+        <footer>
+            <div class="letters-left">letters left: <span></span></div>
+        </footer>
+    </div>
+
+    <footer>
+        <p class="description"></p>
+        <div class="copyright"></div>
+    </footer>
+
+    <div class="popup-bg hide"></div>
+
+    <div class="popup container flex-item flex-col hide"></div>
+
+    <div class="menu container flex-item flex-col popup hide">
+        <h2 class="title">end</h2>
+        <ul class="info flex-item flex-col">
+            <li class="flex-item flex-space">
+                <div class="info-value">time</div>
+                <div class="key-value" id="time">00:00:00</div>
+            </li>
+            <li class="flex-item flex-space">
+                <div class="info-value">speed</div>
+                <div class="key-value flex-item"><div id="speed">0</div> <div class="unit">letters/s</div></div>
+            </li>
+        </ul>
+        <div class="record flex-item">
+            <div class="head"></div>
+            :
+            <div class="record-value"></div>
+        </div>
+        <div class="buttons flex-item flex-col">
+            <button class="primary-btn replay">replay</button>
+            <button class="primary-btn"><a href="../3. home/index.html">quit</a></button>
+        </div>
+    </div>
+
+    <div class="menu container flex-item flex-col popup hide">
+        <h2 class="title">game paused</h2>
+        <div class="buttons flex-item flex-col">
+            <button class="primary-btn resume">resume</button>
+            <button class="primary-btn logout">quit</button>
+        </div>
+
+    </div>
+    
+    <script src="../main.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>

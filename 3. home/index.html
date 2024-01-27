@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <title>Writing Speed - Signup</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="mode-button-container">
+        <button class="toggle-mode-btn small-icon"><i class="fa-solid fa-moon"></i></button>
+    </div>
+
+    <div class="options flex-item">
+        <div class="current-user flex-item">
+            <span class="small-icon logout"><i class="fa-solid fa-user"></i></span>
+            <small class="current-username"></small>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="headline"></h1>
+    </header>
+
+    <div class="container flex-item flex-col">
+        <h2 class="title">home</h2>
+        <div class="greetings">welcome <span class="username"></span>!</div>
+        <ul class="info flex-item flex-col">
+            <li class="flex-item">
+                <div class="info-key">game count</div>
+                <div class="info-value" id="game-count"></div>
+            </li>
+            <li class="flex-item">
+                <div class="info-key">average</div>
+                <div class="info-value" id="average"></div>
+            </li>
+            <li class="flex-item">
+                <div class="info-key">average speed</div>
+                <div class="info-value flex-item"> <div id="average-speed"></div> <span class="unit">letters/s</span></div>
+            </li>
+            <li class="flex-item">
+                <div class="info-key">level</div>
+                <div class="info-value" id="level"></div>
+            </li>
+            <li class="flex-item">
+                <div class="info-key">created at</div>
+                <div class="info-value" id="created-at"></div>
+            </li>
+        </ul>
+
+        <div class="best-score-container flex-item flex-col">
+            <h3>best score:</h3>
+            <div class="best-score flex-item">
+                <div class="best-time-score"></div>
+                <div class="best-speed-score flex-item"> <span></span> <span class="unit">letters/s</span></div>
+            </div>
+        </div>
+
+        <div class="home-buttons flex-item flex-col">
+            <button class="primary-btn play"><a href="../4. game/index.html">play</a></button>
+            <button class="primary-btn logout">log out</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="description"></p>
+        <div class="copyright"></div>
+    </footer>
+
+    <div class="popup-bg hide"></div>
+
+    <div class="popup container flex-item flex-col hide"></div>
+    
+    <script src="../main.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>

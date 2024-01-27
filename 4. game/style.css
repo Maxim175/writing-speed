@@ -1,0 +1,117 @@
+.container:not(.popup) {
+    width: min(95%, 45em);
+    height: 23em;
+}
+
+/* ------------- Game Container Header ---------------- */
+.container header {
+    width: var(--prc100);
+}
+
+.container header .counter{
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.container header .pause-button-container .pause{
+    height: 2em;
+    width: 2em;
+}
+.container header .pause-button-container .pause:hover {
+    background-color: var(--border-dark-color);
+}
+
+/* ------------- Game Container Body ---------------- */
+.container section .display {
+    font-size: 10em;
+    border: 3px solid var(--border-dark-color);
+    border-radius: 5px;
+    height: 1.2em;
+    width: 1.2em;
+    padding-top: .22em;
+    transition: background-color .3s;
+}
+
+.container section .display.wrong {
+    background-color: var(--wrong-color);
+    animation: shake .3s;
+}
+
+/* ------------- Game Container Footer ---------------- */
+.container footer .letters-left {
+    font-size: 1.2em;
+}
+.container footer .letters-left span {
+    color: var(--border-dark-color);
+}
+
+/* ------------- Count Down ---------------- */
+.container:has(.count-down-number) {
+    height: 15em;
+    width: 15em;
+}
+.container > .count-down-number {
+    font-size: 15em;
+}
+
+/* ------------- End Menu ---------------- */
+.menu {
+    width: min(18em, 80%);
+    gap: 1em;
+}
+
+.menu .info {
+    gap: .5em;
+    width: var(--prc100);
+}
+
+.menu .info li {
+    width: var(--prc100);   
+    font-size: 1.2em;
+    gap: 1em;
+    position: relative;
+}
+
+.menu .info li::before {
+    content: ":";
+    position: absolute;
+    left: 50%;
+}
+
+.menu .info li .key-value {
+    color: var(--border-dark-color);
+    gap: .5em;
+}
+
+.menu .record {
+    gap: .5em;
+    font-size: 1.5em;
+    color: var(--border-dark-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-dark-color);
+    padding: .6em .8em;
+}
+
+.menu .record .head {
+    text-align: center;
+}
+
+.menu .buttons {
+    gap: .5em;
+}
+
+.menu .buttons :where(.replay, .resume) {
+    background-color: var(--recommended-color);
+}
+
+@keyframes shake {
+    0%, 100%{
+        transform: translateX(0);
+    }
+    20%, 60%{
+        transform: translateX(-5px);
+    }
+    40%, 80%{
+        transform: translateX(5px);
+    }
+}

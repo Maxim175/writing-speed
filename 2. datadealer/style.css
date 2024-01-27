@@ -1,0 +1,83 @@
+.container:not(.popup){
+    width: 20rem;
+    gap: 2em;
+}
+
+/* ----------- form -----------*/
+.container .main-form{
+    width: var(--prc100);
+    gap: .5em;
+}
+
+.container .main-form .input-field{
+    background-color: var(--secondary-color);
+    height: var(--height);
+    width: var(--prc100);
+    border-radius: 20px;
+    position: relative;
+}
+
+/* ----------- Modern Label Translation ----------- */
+.container .main-form .input-field label{
+    position: absolute;
+    left: 1em;
+    color: black;
+    padding: .2em .3em;
+    border-radius: 10px;
+    z-index: 99;
+    transition: all ease-in-out .2s;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.container .main-form .input-field label.active-label{
+    transform: translate(-5px, -25px);
+    font-size: 1em;
+    color: var(--border-dark-color);
+}
+
+.container .main-form .input-field label.not-active-label{
+    transform: translate(0, 0);
+    font-size: 1.2em;
+}
+
+.container .main-form .input-field input{
+    width: calc(100% - var(--height));
+    height: var(--prc100);
+    border-right: 1px solid black;
+    padding: 0 1em;
+    font-size: 1.3em;
+    border: 3px solid var(--border-dark-color);
+    border-radius: 20px 0 0 20px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.container .main-form .input-field .small-icon{
+    height: var(--height);
+    width: var(--height);
+}
+
+/* ----------- Alert Message ----------- */
+.container .main-form .form-message {
+    color: var(--wrong-color);
+    font-weight: 500;
+    margin: .3em 0;
+}
+
+.container .main-form .submit-field {
+    width: var(--prc100);
+    padding-top: .5em;
+    border-top: 1px solid var(--border-dark-color);
+}
+
+/* ----------- Animation ----------- */
+@keyframes pop {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}

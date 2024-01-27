@@ -1,0 +1,63 @@
+.container:not(.popup) {
+    min-width: 25%;
+    gap: 1em;
+}
+
+/* ----------- User List ----------- */
+
+.container .users-list {
+    gap: 1em;
+    width: var(--prc100);
+}
+
+.container .users-list .user {
+    gap: 0;
+    width: var(--prc100);
+    height: var(--height);
+    border-radius: 5px;
+}
+
+.container .users-list .user .username {
+    margin-right: 1em;
+    padding: 0 .5em;
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    border: 2px solid var(--border-dark-color);
+    border-radius: 5px;
+    height: var(--height);
+    width: calc(100% - 2 * var(--height));
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.container .users-list .user .username.active {
+    background-color: var(--border-dark-color);
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.container .users-list .user .buttons button {
+    height: var(--height);
+    aspect-ratio: 1;
+    padding: 0;
+    font-size: 1em;
+}
+
+/* ----------- Links ----------- */
+.container .links{
+    gap: 1em;
+    width: var(--prc100);
+    padding: 1em 1em 0 1em;
+    text-decoration: underline;
+    color: var(--border-light-color);
+    border-top: 1px solid var(--border-dark-color);
+}
+.container .links a:hover {
+    cursor: pointer;
+    color: var(--border-dark-color);
+}
+
+/* ----------- No User Alert ----------- */
+.container .no-user-alert {
+    opacity: .8;
+}

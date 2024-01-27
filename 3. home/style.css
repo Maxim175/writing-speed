@@ -1,0 +1,63 @@
+.container:not(.popup) {
+    min-width: 22em;
+    gap: 1em;
+}
+
+/* ----------- Adding Spacings ----------- */
+.container .greetings {
+    font-size: 1.3em;
+}
+
+.container .greetings .username{
+    text-decoration: underline;
+    color: var(--border-dark-color);
+}
+
+.container .info {
+    min-width: 80%;
+    gap: .2em;
+}
+
+.container .info li {
+    width: var(--prc100);
+    justify-content: space-between;
+    position: relative;
+}
+.container .info li::before {
+    content: ':';
+    position: absolute;
+    left: var(--prc50);
+}
+.container .info li .info-value.flex-item {
+    gap: 0.5em;
+}
+
+.container .best-score-container {
+    gap: .5em;
+}
+
+.container .best-score-container h3{
+    color: var(--border-dark-color);
+    font-size: 1.8em;
+}
+
+.container .best-score-container .best-score{
+    gap: 3em;
+    position: relative;
+}
+.container .best-score-container .best-score::before{
+    content: '/';
+    position: absolute;
+    left: var(--prc50);
+}
+
+.container .best-score-container .best-score .best-speed-score {
+    gap: .5em;
+}
+
+.container .home-buttons{
+    gap: .5em;
+}
+.container .home-buttons button.play {
+    background-color: var(--recommended-color);
+}
