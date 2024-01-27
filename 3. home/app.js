@@ -10,7 +10,7 @@ let bestSpeedScoreField = document.querySelector(".best-speed-score span");
 
 function getPlayerData () {
     if (activeUsername == "") {
-        location.pathname = "1.%20login/index.html";
+        location.pathname = "/writing-speed/1.%20login/";
     } else {
         users.forEach(user => {
             if (user.name === activeUsername) {
