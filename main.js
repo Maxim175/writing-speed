@@ -1,5 +1,5 @@
 // Getting Data From Local Storage
-let users = null;
+let users = [];
 
 localStorage.getItem("users")? users = JSON.parse(localStorage.getItem("users")): null;
 
