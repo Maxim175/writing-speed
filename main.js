@@ -1,7 +1,7 @@
 // Getting Data From Local Storage
 let users = [];
 
-localStorage.getItem("users")? users = JSON.parse(localStorage.getItem("users")): null;
+localStorage.getItem("users")? users = JSON.parse(localStorage.getItem("users")): users = [];
 
 // Setting Active Username
 let activeUsername = "";
