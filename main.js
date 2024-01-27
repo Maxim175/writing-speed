@@ -44,7 +44,7 @@ let gameIsRunning = JSON.parse(localStorage.gameIsRunning);
 
 // Game Settings
 let lettersLeftContainer = document.querySelector(".letters-left span");
-let maxLetters = 2;
+let maxLetters = 20;
 
 // Toggling Mood (light/dark)
 let toggleModeButton = document.querySelector(".toggle-mode-btn");
