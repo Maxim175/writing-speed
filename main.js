@@ -13,7 +13,7 @@ users.forEach(user => {
 let activeUser;
 
 // Redirect
-if (location.pathname == "/writing-speed/index.html" || location.pathname == "/writing-speed/" ) {
+if (location.pathname == "/writing-speed/") {
     if (activeUsername == "") {
         location.pathname = "/writing-speed/1.%20login/";
     } else {
