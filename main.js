@@ -113,8 +113,8 @@ function popupMessage(e) {
                 quitGame(e.target.textContent);
             });
             cancelButton.addEventListener("click", () => {
-                popupHide();
-                resumeGame();
+                popupBg.classList.remove("hide");
+                pauseMenu.classList.remove("hide");
             });
             executeButton.textContent = "quit";
         } else if (e.submitter.value == "edit") {
