@@ -102,7 +102,7 @@ input:focus{
 body{
     gap: 2em;
     min-height: 100vh;
-    padding: 3em 0 2em 0;
+    padding: 3.5em 0 2em 0;
     background: linear-gradient(180deg, var(--primary-color) 0%, var(--text-color) 100%);
     color: var(--secondary-color);
 }
