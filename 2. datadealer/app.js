@@ -62,7 +62,7 @@ function createUser() {
     }
     users.push(newUser);
     localStorage.users = JSON.stringify(users);
-    location.pathname = "/1.%20login/index.html";
+    location.pathname = "/writing-speed/1.%20login/";
 }
 
 // Show Alert Message
@@ -79,5 +79,5 @@ function popMessage(message) {
 
 // Redirect To Home If Connected
 if (activeUsername != "") {
-    location.pathname = "/3.%20home/index.html";
+    location.pathname = "/writing-speed/3.%20home/";
 }
