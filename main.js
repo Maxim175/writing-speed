@@ -17,7 +17,7 @@ if (location.pathname == "/writing-speed/") {
     if (activeUsername == "") {
         location.pathname = "/writing-speed/1.%20login/";
     } else {
-        location.pathname = "/writing-speed/2.%20home/";
+        location.pathname = "/writing-speed/3.%20home/";
     }
 }
 
