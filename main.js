@@ -14,11 +14,11 @@ let activeUser;
 
 // Redirect
 console.log(location.pathname);
-if (location.pathname == "writing-speed/" || location.pathname == "writing-speed/" ) {
+if (location.pathname == "/writing-speed/" || location.pathname == "/writing-speed/" ) {
     if (activeUsername == "") {
         location.pathname = "/writing-speed/1.%20login/index.html";
     } else {
-        location.pathname = "writing-speed/2.%20home/index.html";
+        location.pathname = "/writing-speed/2.%20home/index.html";
     }
 }
 
