@@ -5,7 +5,8 @@ lettersLeftContainer.textContent = maxLetters;
 //  Check If Game Is Running And If Is Connected
 if (activeUsername != "") {
     if (!gameIsRunning) {
-        location.pathname = "/writing-speed/3.%20home/";
+        // location.pathname = "/writing-speed/3.%20home/";
+        console.log("game not running");
     }
 } else {
     location.pathname = "/writing-speed/1.%20login/";
