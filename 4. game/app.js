@@ -5,10 +5,10 @@ lettersLeftContainer.textContent = maxLetters;
 //  Check If Game Is Running And If Is Connected
 if (activeUsername != "") {
     if (!gameIsRunning) {
-        location.pathname = "/3.%20home/index.html";
+        location.pathname = "/writing-speed/3.%20home/";
     }
 } else {
-    location.pathname = "/1.%20login/index.html";
+    location.pathname = "/writing-speed/1.%20login/";
 }
 
 // Game Settings
@@ -198,7 +198,7 @@ resumeButton.addEventListener("click",resumeGame);
 function quitGame(targetTextContent) {
     localStorage.gameIsRunning = false;
     if (targetTextContent == "quit") {
-        location.pathname = "/3.%20home/index.html";
+        location.pathname = "/writing-speed/3.%20home/";
     } else {
         disconnectUser();
     }
