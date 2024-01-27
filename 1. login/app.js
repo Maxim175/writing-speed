@@ -22,7 +22,7 @@ function showUsers() {
                     editButton.classList.add("edit", "primary-btn");
                     editButton.addEventListener("click", (e) => {
                         localStorage.isEditing = e.target.parentElement.parentElement.children[0].textContent;
-                        location.pathname = "2.%20datadealer/index.html";
+                        location.pathname = "/writing-speed/2.%20datadealer/";
                     });
                     editButton.textContent = "🖊️";
         
@@ -78,11 +78,11 @@ select.addEventListener("click", () => {
         });
         console.log(users);
         localStorage.users = JSON.stringify(users);
-        location.pathname = "/3.%20home/index.html";
+        location.pathname = "/writing-speed/3.%20home/";
     }
 });
 
 // Redirect To Home If Connected
 if (activeUsername != "") {
-    location.pathname = "/3.%20home/index.html";
+    location.pathname = "/writing-speed/3.%20home/";
 }
