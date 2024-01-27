@@ -13,11 +13,11 @@ users.forEach(user => {
 let activeUser;
 
 // Redirect
-if (location.pathname == "/writing-speed/" || location.pathname == "/writing-speed/" ) {
+if (location.pathname == "/writing-speed/index.html" || location.pathname == "/writing-speed/" ) {
     if (activeUsername == "") {
-        location.pathname = "/writing-speed/1.%20login/index.html";
+        location.pathname = "/writing-speed/1.%20login/";
     } else {
-        location.pathname = "/writing-speed/2.%20home/index.html";
+        location.pathname = "/writing-speed/2.%20home/";
     }
 }
 
@@ -37,7 +37,7 @@ document.body.classList.add('flex-item', "flex-col", "flex-space");
 document.querySelector("footer").classList.add("flex-item", "flex-col");
 
 // Set Game Not Running If Not In Game Page
-if (location.pathname != "/4.%20game/index.html") {
+if (location.pathname != "/writing-speed/4.%20game/") {
     localStorage.gameIsRunning = false;
 }
 let gameIsRunning = JSON.parse(localStorage.gameIsRunning);
@@ -153,7 +153,7 @@ function editUser() {
     });
     localStorage.users = JSON.stringify(users);
     localStorage.isEditing = null;
-    location.pathname = "/1.%20login/index.html";
+    location.pathname = "/writing-speed/1.login/";
 }
 
 // Hiding Popup Box
@@ -186,7 +186,7 @@ function disconnectUser() {
         }
     });
     localStorage.users = JSON.stringify(users);
-    location.pathname = "/1.%20login/index.html";
+    location.pathname = "/writing-speed/1.%20login/";
 }
 
 // Formatting Time (ms => min:sec:ms)
